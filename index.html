@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>IT ERA WEBSITE - TEAM GWAPS</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins&display=swap');
+
+:root {
+
+    --fonts-inter: 'Inter', sans-serif;
+    --fonts-poppins: 'Poppins', sans-serif;
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box; 
+    
+    font-family: var(--fonts-poppins);
+
+}
+body {
+    background-image: url(raining.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem;
+    height: 11rem;
+}
+
+.intro-welcome {
+    text-align: center;
+    padding: 4rem;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.pInformations {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 10rem;
+}
+
+.photo {
+    background-image: url(bgroun.svg);
+    height: 31.8rem;
+    width: 19.4rem;
+    background-repeat: no-repeat;
+}
+
+.photo-container {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+
+.photo-container .photo img {
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+    margin-left: 5.9rem;
+    margin-top: 2rem;
+}
+
+.photo-container-second {
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.photo-container-second .photo img {
+    border-radius: 50%;
+    margin-left: 5.9rem;
+    margin-top: 2rem;
+}
+
+.photo-container-second .photo .box {
+    border-radius: 2rem;
+    height: 30rem;
+    width: 18rem;
+
+}
+
+.photo-container .photo .box {
+    border-radius: 2rem;
+    height: 32rem;
+    width: 20rem;
+
+}
+.subject-title {
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+.subject-to {
+    color:#FFFFFF;
+    text-align: center;
+    font-size: 80px;
+    font-style: italic;
+    transform: translateY(-2rem);
+}
+.text-bold {
+    font-weight: bold;
+}
+.description {
+    background: none;
+    width: 18rem;
+    color: white;
+    margin-top: 4rem;
+    margin-left: 0.8rem;
+    font-size: 12px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+
+.description-second {
+    background: none;
+    width: 17rem;
+    color: white;
+    margin-top: 4rem;
+    margin-left: 1rem;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.instructor {
+    position: relative;
+    height: 31rem;
+
+}
+
+.angel-img {
+    position: absolute;
+    width: 35rem;
+    height: 31rem;
+    z-index: 1;
+}
+
+.purple-line{
+    height: 5.5rem;
+    width: auto;
+    background: #8F00FF;
+    transform: translateY(25.5rem);
+    opacity: .6;
+
+}
+
+.instructor-label {
+    display: flex;
+    transform: translate(15rem, 6rem);
+}
+
+.instructor-name {
+    color: white;
+    width: 30%;
+    font-family: var(--fonts-inter);
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 50px;
+    transform: translate(15rem, 9rem);
+    
+}
+
+
+.first-activity-container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    
+}
+
+#first-act-img{
+    width: 100%;
+    padding-left: 5rem;
+}
+#one-logo {
+width: 30%;
+opacity: .6;
+}
+
+.fa {
+    color: white;
+    text-align: center;
+}
+
+.fa-row {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+.third-activity-container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.fourth-activity-container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 4rem;
+    
+}
+
+#fourth-logo {
+    width: 30%;
+    opacity: .6;
+}
+
+#fourth-act-img{
+    width: 40%;
+}
+#third-act-img{
+    width:60%;
+}
+
+#three-logo {
+    width: 50%;
+    opacity: .6;
+}
+.expectation {
+    padding: 3rem;  
+}
+
+.expectation .label {
+    color: white;
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+}
+
+.square-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.my-expectations {
+    height: 16rem;
+    width: 22rem;
+    border: 1px solid white;
+    border-radius: 6px;
+    color: white;
+
+}
+
+
+
+.me-image {
+    border-radius: 50%;
+    height: 5em;
+    width: 5em;
+    display: flex;
+    margin-top: 3rem;
+    
+}
+
+.exp-name {
+    color:white;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.text-size {
+    font-size: 20px;
+}
+
+.me-descript-kate{
+    height: 16rem;
+    position:relative;
+    color: white;
+    font-size: 7.9px;
+    text-align: justify;
+    padding: 1rem;
+    transform: translate(0,-14.8rem);
+    z-index: -99;
+    opacity: 0; 
+    border-radius: 6px;
+    border: 1px solid black;
+    visibility: hidden; 
+}
+
+.me-descript-arnelyn {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    color: white;
+    font-size: 11px;
+    text-align: justify;
+    padding: 1rem;
+    transform: translate(0,-14.8rem);
+    border-radius: 6px;
+    border: 1px solid black;
+    z-index: -99;
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.me-descript-jonalyn {
+    height: 16rem;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 11px;
+    text-align: justify;
+    padding: 1rem;
+    transform: translate(0,-14.8rem);
+    border-radius: 6px;
+    border: 1px solid black;
+    z-index: -99;
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.me-descript-harvy {
+    height: 16rem;
+    position:relative;
+    color: white;
+    font-size: 11px;
+    text-align: justify;
+    padding: 1rem;
+    transform: translate(0,-14.8rem);
+    border-radius: 6px;
+    border: 1px solid black;
+    z-index: -99;
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.me-descript-cristel {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    color: white;
+    font-size: 14px;
+    text-align: justify;
+    padding: 1rem;
+    transform: translate(0,-14.8rem);
+    border-radius: 6px;
+    border: 1px solid black;
+    z-index: -99;
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.me-descript-elen {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    color: white;
+    font-size: 11px;
+    text-align: justify;
+    padding: 1rem;
+    transform: translate(0,-14.8rem);
+    border-radius: 6px;
+    border: 1px solid black;
+    z-index: -99;
+    opacity: 0; 
+    visibility: hidden; 
+}
+
+.me-descript-dina {
+    height: 16rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    color: white;
+    font-size: 11px;
+    text-align: justify;
+    padding: 1rem;
+    transform: translate(0,-14.8rem);
+    border-radius: 6px;
+    border: 1px solid black;
+    z-index: -99;
+    opacity: 0; 
+    visibility: hidden; 
+}
+.container-me:hover {
+    visibility: hidden;
+    opacity: 0;
+}
+.container-me:hover + .me-descript-kate{
+    visibility: visible;
+    opacity: 1;
+    
+
+}
+
+.container-me:hover + .me-descript-arnelyn{
+    visibility: visible;
+    opacity: 1;
+ 
+
+}
+
+.container-me:hover + .me-descript-jonalyn{
+    visibility: visible;
+    opacity: 1;
+    
+
+}
+
+.container-me:hover + .me-descript-harvy{
+    visibility: visible;
+    opacity: 1;
+
+
+}
+
+.container-me:hover + .me-descript-cristel{
+    visibility: visible;
+    opacity: 1;
+  
+
+}
+
+.container-me:hover + .me-descript-elen{
+    visibility: visible;
+    opacity: 1;
+  
+}
+
+.container-me:hover + .me-descript-dina{
+    visibility: visible;
+    opacity: 1;
+   
+
+}
+.square-card-second {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 2rem;
+}
+
+.contact-container {
+    height: 18rem;
+    width: 100% auto;
+}
+
+.card {
+    padding: 2rem;
+    width: 50rem;
+    height: 28rem;
+    border: 1px solid white;
+    border-radius: 6px;
+    
+}
+
+.contact-text {
+    color: white;
+    text-align: center;
+    
+}
+
+.contact-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    list-style: none;
+    
+    
+}
+
+.number {
+ width: 20rem;
+ text-align: center ;
+}
+
+.facebook {
+    text-align: center;
+    width: 20rem;
+}
+.fb{
+    font-weight: bold;
+}
+
+.ea {
+    padding: 2rem;
+    color: white;
+    text-align: center;
+}
+
+
+.email {
+color:white;
+text-align: center;
+transform: translateY(-2rem);
+}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        data-aos="fade-up"
+        data-aos-delay="500"
+        src="welcome_me.png" />
+    </div>
+    <p class="subject-to">to</p>
+    <p class="subject-title">LIVING IN THE IT ERA</p>
+    <div class="welcome-bg">
+      <p class="intro-welcome">
+        Welcome to our website, our personalized hub for all things related to
+        our personal information and school activities. We've designed this
+        space with our needs in mind, aiming to make it not just functional but
+        also aesthetically pleasing. Whether you're here to access our personal
+        records, stay up-to-date on school events, or simply explore, we're
+        committed to providing you with an engaging and user-friendly
+        experience. Welcome to our digital home away from home!
+      </p>
+    </div>
+    <div class="instructor">
+      <img class="angel-img" src="angel.png" />
+      <div class="purple-line"></div>
+      <img class="instructor-label" src="instructor.png" />
+      <p class="instructor-name">ANGEL H. LIBRES</p>
+    </div>
+    <p class="pInformations">TEAM GWAPS INFORMATIONS</p>
+    <div class="photo-container">
+      <div data-aos="fade-left" class="photo">
+        <img src="arnelyn.png" />
+        <p class="description">
+          Name: Arnelyn C. Bregildo <br />
+          Age: 19 years old <br />
+          Course: Bachelor of Science in Social Work <br />
+          Address: P-4D Bagontaas Golden Village, Valencia City. <br />
+          Gender: Female <br />
+          Hobbies: Singing, dancing, watching movies and cooking.<br />
+          Dream: Achieving all my goals in life, become a registered social
+          worker and go abroad. <br />
+          Greatest achievement: Having work at the age <br />
+          of 18 and sustain my family needs, pay my own tuition and become a
+          dean's lister. <br />
+          Status: Single
+        </p>
+      </div>
+      <div data-aos="fade-up" data-aos-duration="300" class="photo">
+        <img src="jonalyn.png" />
+        <p class="description">
+          Name: Jonalyn Mae Y. Rojo <br />
+          Age: 20 years old <br />
+          Course: Bachelor of Science in Social Work
+          <br />
+          Address: P-13 Poblacion Valencia City <br />
+          Gender: Female <br />
+          Hobbies: Singing, Dancing, doing crafts and arts. <br />
+          Dream: To be a Registered Social Worker and to have financial
+          stability. <br />
+          Greatest achievement: Graduated With High Honor <br />
+          Status: Single
+        </p>
+      </div>
+
+      <div data-aos="fade-up" data-aos-duration="300" class="photo">
+        <img src="kate.png" />
+        <P class="description">
+         Name: Kate Andrea C. Panisan <br />
+          Age: 22 years old <br />
+          Course: Bachelor of Science in Social Work <br />
+          Address: P-4 Poblacion Valencia City <br />
+          Gender: Female <br />
+          Hobbies: taking care of pets <br />
+          Dream: To be a loving wife and to become a registered social worker
+          <br />
+          Greatest achievement: Best girlfriend and dean's lister. <br />
+          Status: Single
+        </p>
+      </div>
+
+      <div data-aos="fade-left" class="photo">
+        <img src="harvy.png" />
+        <p class="description">
+          Name: Harvy Jay M. Porio <br />
+          Age: 20 years old <br />
+          Course: Bachelor of Science in Social Work <br />
+          Address: P-2 Minongan Quezon Bukidnon <br />
+          Hobbies: Dancing, Cooking, Watching Movies, and taking care of my dog.
+          Dream: To become a registered Social Worker, and to be able to travel
+          across the country. <br />
+          Greatest achievement: My greatest achievement so far is, being able to
+          study at college since my brother wasn't able to continue his college
+          education due to financial issues. <br />
+          Status: Single
+        </p>
+      </div>
+    </div>
+
+    <div class="photo-container-second">
+      <div data-aos="fade-right" class="photo">
+        <img src="cristel.png" />
+        <p class="description-second">
+          Name: Cristel C. Lapetaje <br />
+          Age: 20 years old <br />
+     Course: Bachelor of Science in Social
+          Work <br />
+          Address: P- 1 concepcion valencia city
+          <br />
+          Hobbies: Dancing, Cooking, Watching
+          Movies, and taking care of my garden <br />
+          Dream: To become a registered Social
+          Worker <br />
+          Greatest achievement: My greatest
+          achievement is to focus my goal
+          <br />
+          Status: Single
+        </p>
+      </div>
+      <div data-aos="fade-up" class="photo">
+        <img src="elen.png" />
+        <p class="description-second">
+          Name: Elynjoy C. Magsayo <br />
+          Age: 19 <br />
+          Adress: P-13 mahayahay concepcion
+          valencia city <br />
+          Course: Bachelor of Science in Social
+          work <br />
+          Hobbies: watching movie. <br />
+          Dream: to be come a future social work
+          <br />
+          Status: single
+        </p>
+      </div>
+      <div data-aos="fade-left" class="photo">
+        <img src="dina.png" />
+        <p class="description-second">
+          Name: Dina B. Anchojo <br />
+          Age: 20 <br />
+          Adress: P-1 concepcion valencia city <br />
+          Course: Bachelor of science in social work <br />
+          Hobbies: cooking, watching movie, and soon <br />
+          Dream: to be come future social worker soon <br />
+          Status: single
+        </p>
+      </div>
+    </div>
+    <div class="first-activity-container">
+     <img data-aos="fade-right" id="first-act-img" src="first.jpg" alt="first-activity"/>
+     <div data-aos="fade-left" class="fa-row">
+      <img id="one-logo"src="one.png" alt="number-one"/>
+      <p class="text-size text-bold fa">
+        IT ERA FIRST ACTIVITY INTRODUCING OUR NAMES </br>
+         AND DANCING TIKTOK - 2ND PLACE         
+      </p>
+     </div>
+     
+    </div>
+    
+    <div class="expectation">
+      <p class="label">Our Expectations</p>
+    </div>
+    <div class="square-card">
+      <div class="my-expectations">
+        <div class="container-me">
+        <img class="me-image" src="arnelyn.png" />
+        <p class="exp-name">
+          <span class="text-size">Arnelyn C. Bregildo<br />
+          BSSW 2A GE ELECT 1 <br />
+          Wed-Thu 2:30-4:00pm
+        </p></div>
+        <p class="me-descript-arnelyn">
+          In my IT ERA class I am expecting to explore a lot especially in terms of dealing technology. This subject will surely teach and help me in understanding  the evolution of technology that affects our life and society. I am expecting this subject to be fun to deal with and it will help me in developing my skills and passion in using technology as my tool in facing this new era of our life, especially that we are now in the 21st century where gadgets are our main instrument. I do hope  that the activities and discussions that will be given will mold me as an individual with a lot of knowledge in technology.
+
+        </p>
+      </div>
+      <div class="my-expectations">
+        <div class="container-me"><img class="me-image" src="jonalyn.png" /> <p class="exp-name">
+          <span class="text-size">Jonalyn Mae Y. Rojo<br />
+          BSSW 2A GE ELECT 1 <br />
+          Wed-Thu 2:30-4:00pm
+        </p></div>
+        <p class="me-descript-jonalyn">
+          In my IT ERA class I am expecting to explore a lot especially in terms of dealing technology. This subject will surely teach and help me in understanding  the evolution of technology that affects our life and society. I am expecting this subject to be fun to deal with and it will help me in developing my skills and passion in using technology as my tool in facing this new era of our life, especially that we are now in the 21st century where gadgets are our main instrument. I do hope  that the activities and discussions that will be given will mold me as an individual with a lot of knowledge in technology.
+
+        </p>
+      </div>
+      <div class="my-expectations">
+        <div class="container-me">
+        <img class="me-image" src="kate.png" />
+        <p class="exp-name">
+          <span class="text-size">Kate Andrea C. Panisan<br />
+          BSSW 2A GE ELECT 1 <br />
+          Wed-Thu 2:30-4:00pm
+        </p></div>
+        <p class="me-descript-kate">
+          Understanding ICT is essential as we manage a society that is more dependent on digital infrastructure. This topic opens the door to a vast body of knowledge that includes everything from the fundamentals of computer hardware and software to the details of data analysis, cybersecurity, and the broad implications of developing technologies. In this subject, I am expecting something different. Such as, I anticipate that the course will provide me an advanced and detailed grasp of the different technical developments that have influenced the modern world. The development of information technology, the internet, digital communication, and the influence of gadgets like smartphones, social media, and cloud computing on our daily lives are all covered in this.
+          IT era comes also with several issues especially that it deals with technology. I am also expecting that the moral responsibilities that come with advanced technological power will be discussed. Discussions on issues like data privacy, cybersecurity, digital surveillance, and the moral quandaries raised by cutting-edge technologies like artificial intelligence and biotechnology are things I'm hoping to see. By investigating these subjects, I can build a solid ethical foundation for navigating the information technology era. Last but not least, I hope that this subject will allow me to enjoy the difficulties and lessons that I am learning—not just for my grade, but for the rest of the years to come.
+        </p>
+      </div>
+      <div class="my-expectations">
+        <div class="container-me">
+        <img class="me-image" src="harvy.png" />
+        <p class="exp-name">
+          <span class="text-size">Harvy Jay M. Porio<br />
+          BSSW 2A GE ELECT 1 <br />
+          Wed-Thu 2:30-4:00pm
+        </p></div>
+        <p class="me-descript-harvy">
+          In my IT ERA class, I am excited to explore the limitless possibilities of technology. Through hands-on activities and theoretical instruction, I am eager to develop my problem-solving skills and collaborate with my peers on diverse IT projects. By delving into coding and systems, I hope to gain a comprehensive understanding of programming languages and their applications. Furthermore, I am enthusiastic about learning about emerging technologies and their implications for the future of the IT industry. With each lesson, I am motivated to grow as a proficient and adaptable IT enthusiast, ready to take on any challenge that comes my way.
+        </p>
+      </div>
+    </div>
+    <div class="square-card-second">
+      <div class="my-expectations">
+        <div class="container-me">
+        <img class="me-image" src="cristel.png" />
+        <p class="exp-name">
+          <span class="text-size">Cristel C. Lapetaje<br />
+          BSSW 2A GE ELECT 1 <br />
+          Wed-Thu 2:30-4:00pm
+        </p></div>
+        <p class="me-descript-cristel">
+          In my IT ERA class I am expecting to explore a lot and to learn about the IT era  And also  i have a lot of learning this subject especially in terms of dealing technology.  I do hope  that the activities and discussions that will be given will mold me as an individual with a lot of knowledge in technology.
+        </p>
+      </div>
+      <div class="my-expectations">
+        <div class="container-me">
+        <img class="me-image" src="elen.png" />
+        <p class="exp-name">
+          <span class="text-size">Elynjoy C. Magsayo<br />
+          BSSW 2A GE ELECT 1 <br />
+          Wed-Thu 2:30-4:00pm
+        </p></div>
+        <p class="me-descript-elen">
+          In my IT  ERA class  I am expecting to explore many things,IT ERA is very important part in the development of students ICT capability throughout, In the Philippines ICT is integrating inform and communication technology and learning process since it has become a great concern for many educators. And also ICT it is important that teachers do reflect on practices and take the appropriate steps to improve them. In this subject, I am expecting something different and also I am expecting to explore the limitless possibilities of the IT ERA.
+        </p>
+      </div>
+      <div class="my-expectations">
+        <div class="container-me">
+        <img class="me-image" src="dina.png" />
+        <p class="exp-name">
+          <span class="text-size">Dina B. Anchojo<br />
+          BSSW 2A GE ELECT 1 <br />
+          Wed-Thu 2:30-4:00pm
+        </p></div>
+        <p class="me-descript-dina">
+          In the ever-evolving landscape of the IT era, my expectations for this subject under your guidance are high. I anticipate delving into cutting-edge technologies, exploring the intricacies of programming languages, and gaining a comprehensive understanding of IT systems. Your expertise and engaging teaching style lead me to believe that this course will not only provide technical knowledge but also foster critical thinking and problem-solving skills crucial in the fast-paced IT industry. I look forward to a dynamic learning experience that equips me with the tools to navigate and contribute meaningfully to the digital advancements of our time.
+        </p>
+      </div>
+    </div>
+    <div class="third-activity-container">
+      <div data-aos="fade-right" class="fa-row">
+        <img id="three-logo"src="three.png" alt="number-three"/>
+        <p class="text-size text-bold fa">
+          THIRD ACTIVITY IS REPORTING
+        </p>
+       </div>
+      <img data-aos="fade-left" id="third-act-img" src="reporting.jpg" alt="first-activity"/>
+     </div>
+     
+     <div class="fourth-activity-container">
+      <img data-aos="fade-right" id="fourth-act-img" src="parody.jpg" alt="first-activity"/>
+      <div data-aos="fade-left" class="fa-row">
+        <img id="three-logo"src="four.png" alt="number-four"/>
+        <p class="text-size text-bold fa">
+          FOURTH ACTIVITY IS PARODY
+        </p>
+       </div>
+     </div>
+     <div class="contact-container">
+      <div class="card">
+        <p class="contact-text text-size text-bold">Contact Information</p> <br/>
+        <div class="contact-group">
+          <div class="facebook">
+            <span class="fb text-size">Facebook</span>
+            <li>Arnelyn Colinares Bregildo</li>
+            <li>Kate Andrea Panisan</li>
+            <li>Jonalyn Mae Rojo</li>
+            <li>Hrvy Porio</li>
+            <li>Cristel Lapetaje</li>
+            <li>Dina Anchojo</li>
+            <li>Elynjoy Magsayo</li>
+          </div>
+          <div class="number">
+            <span class="text-size text-bold">Contact number</span>
+          <li>09977062577</li>
+            <li>09759479147</li>
+            <li>09169038860
+            </li>
+            <li>09365087230</li>
+            <li>09517007425</li>
+            <li>09366418495</li>
+            <li> 09362894381</li>
+          </div>
+          
+        </div>
+        <p class="ea text-size text-bold  ">Email Address</p>
+        <p class="email text-size">Teamgwaps@gmail.com</p>
+      </div>
+     </div>
+     <br/> <br/> <br/> <br/><br/> <br/> <br/> <br/>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
